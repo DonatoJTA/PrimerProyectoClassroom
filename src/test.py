@@ -1,15 +1,18 @@
 from funciones import *
-titulos = leer_titulos('./data/GH.csv')
-print(titulos[:20])
+registros = leer_titulos('./PrimerProyectoClassroom/data/netflix_titles.csv')
+# 
+
+print(registros[:20])
 
 
-print(cuenta_titulos(titulos))
 
-print(calcula_total_titulos(titulos))
+print(cuenta_titulos(registros))
 
-print(pelicula_mejor_valorada(titulos))
+print(calcula_total_titulos(registros))
 
-print(mejores_valoradas(titulos))
+print(pelicula_mejor_valorada(registros))
 
-print(titulo_puntuacion(titulos))
+print(mejores_valoradas(registros))
+
+print(titulo_puntuacion(registros))
 

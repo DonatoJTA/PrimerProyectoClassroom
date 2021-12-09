@@ -18,23 +18,23 @@ Aquí debes describir la estructura del dataset explicando qué representan los 
 
 El dataset está compuesto por \<12\> columnas, con la siguiente descripción:
 
-* **\<columna 0>**: de tipo \<float\>, Es el id del contenido
+* **\<columna 0>**: de tipo \<int\>, Es el id del contenido
 * **\<columna 1>**: de tipo \<str\>, Tipo: pelicula o show de television
 * **\<columna 2>**: de tipo \<str\>, Titulo de la obra
 * **\<columna 3>**: de tipo \<str\>, Nombre del director
 * **\<columna 4>**: de tipo \<str\>, Casting de la obra
 * **\<columna 5>**: de tipo \<str\>, Pais de procedencia
-* **\<columna 6>**: de tipo \<int\>, Estreno de la filmacion
+* **\<columna 6>**: de tipo \<str\>, Estreno de la filmacion
 * **\<columna 7>**: de tipo \<int\>, Año de filmacion
-* **\<columna 8>**: de tipo \<int\>, Puntuacion
-* **\<columna 9>**: de tipo \<float\>, Duracion
+* **\<columna 8>**: de tipo \<str\>, Clasificacion
+* **\<columna 9>**: de tipo \<str\>, Duracion
 * **\<columna 10>**: de tipo \<str\>, Clasificacion del contenido
 * **\<columna 11>**: de tipo \<str\>, Descripcion del contenido
 ....
 
 ## Tipos implementados
 
-Titulos=(Tipo,(titulo,nombre,casting,pais,estreno,año de filmacion,puntuacion,duracion,clasificacion,descripcion,id))
+Peliculas=(Peliculas,(id,tipo,titulo,nombre,casting,pais,estreno,año de filmacion,puntuacion,duracion,clasificacion,descripcion))
 Escribo el tipo de produccion y luego añado toda la informacion adicional
 
 ## Funciones implementadas
@@ -45,10 +45,10 @@ Añade aquí descripciones genéricas de las funciones, que luego debes acompañ
 * **<importaciones>**: importamos todo lo necesario para realizar el codigo
 * **<leer_titulos()>**: definimos una funcion con el proposito de seleccionar y categorizar la informacion obtenida de los datos; para ello primero hacemos que acceda a la informacion y establecemos un lector con su sistema de lectura, añadimos el metodo que debe seguir para leer la informacion; establecemos una condicion, dependieno del tipo de filmacion hara un print u otro y por ultimo retornamos la clasificacion obtenida.
 * **<cuenta_titulos()>**:funcion que te da la cantidad total de titulos
-* **<calcula_total_titulos()>**:funcion que te da el numero total de titulos del archivo
-* **<pelicula_mejor_valorada()>**:esta funcion busca la mejor calificacion de cada pelicula y te devuelve el titulo de esta
-* **<mejores_valoradas()>**: mediante una nota minima establecida te devuelve los titulos que superan esa nota
-* **<titulo_puntuacion()>**: funcion que te devuelve una lista de tuplas con el titulo y la puntuacion
+* **<obtener_titulos()>**:te da un listado de titulos 
+* **<peliculas_de_mas_duracion()>**:esta funcion busca la mejor calificacion de cada pelicula y te devuelve el titulo de esta
+* **<ordena_por_año()>**: Mediante el año de estreno te ordena los titulos
+* **<agrupa_por_año()>**: Te agrupa por año cada titulo
 
 
 ### \<test.py\>

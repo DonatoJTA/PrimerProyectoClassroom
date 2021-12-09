@@ -67,4 +67,5 @@ def titulo_puntuacion(titulos):
             res[clave].add(titulo.rating) 
     return res 
     
+    
 
